@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+.no-shrink{
+    flex-shrink: 0;
+}
+
+.app-container{
+    height: 100vh;
+    background-color: black;
+}
+
+    .main{
+        overflow: hidden;
+    }
+
+        .sidebar{
+            width: 230px;
+        }
+
+        .main-content{
+            overflow: hidden;
+        }
+
+            .upgrade-bar{
+                position: sticky;
+                background-color: rgba(0,0,0,0.7);
+            }
+
+            .main-scroll-section{
+                overflow: auto;
+                background-color: #141922;
+            }
+
+    .player{
+        background-color: #282828;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+        .now-playing{
+
+        }
+
+            .song-img{
+
+            }
+
+                .song-img img{
+                    height: 100%;
+                }
+
+        .player-controls{
+
+        }
+
+        .player-options{
+
+        }
