@@ -72,11 +72,17 @@ h1,h2,h3,h4,h5,h6{
         overflow: hidden;
     }
 
+        /* Sidebar */
+
         .sidebar{
             width: 230px;
             padding: 0 1rem;
             gap: 1rem;
             overflow: hidden;
+        }
+
+        .sidebar li:hover{
+            color: white;
         }
 
             .logo{
@@ -127,14 +133,26 @@ h1,h2,h3,h4,h5,h6{
                 overflow: hidden;
             }
 
-                .add-button{
-                    color: black;
-                    background-color: #a3a3a3;
-                    font-size: 2rem;
-                    padding: 0.1rem 0.6rem;
-                    margin: 0.5rem 0.5rem 0.5rem 0;
-                    vertical-align: middle;
+                .add-playlist{
+                    cursor: pointer;
                 }
+
+                .add-playlist:hover span{
+                    color: white;
+                }
+
+                .add-playlist:hover .add-button{
+                    background-color: white;
+                }
+
+                    .add-button{
+                        color: black;
+                        background-color: #a3a3a3;
+                        font-size: 2rem;
+                        padding: 0.1rem 0.6rem;
+                        margin: 0.5rem 0.5rem 0.5rem 0;
+                        vertical-align: middle;
+                    }
 
                 .playlist-list{
                     list-style: none;
@@ -149,8 +167,15 @@ h1,h2,h3,h4,h5,h6{
             .user .flex{
                 padding: 0.5rem 0.5rem;
                 align-items: center;
-                cursor: pointer;
             }
+
+                .user .download{
+                    cursor: pointer;
+                }
+
+                .user .download:hover{
+                    color: white;
+                }
 
                 .user svg{
                     width: 1rem;
@@ -174,6 +199,8 @@ h1,h2,h3,h4,h5,h6{
                     height: 0;
                     padding-left: 0;
                 }
+
+        /* Main */
 
         .main-content{
             overflow: hidden;
@@ -199,6 +226,10 @@ h1,h2,h3,h4,h5,h6{
 
                     .menu a{
                         position: relative;
+                    }
+
+                    .menu a:hover{
+                        color: white;
                     }
 
                         .menu a .focus{
@@ -293,8 +324,18 @@ h1,h2,h3,h4,h5,h6{
                 font-size: 0.8rem;
             }
 
+            .song-name p:hover{
+                color: white;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
             .song-icons{
                 gap: 0.5rem;
+            }
+
+            .song-icons i:hover{
+                color: white;
             }
 
         .player-controls{
@@ -316,6 +357,10 @@ h1,h2,h3,h4,h5,h6{
                     padding: 0.2rem 0.3rem 0.2rem 0.5rem;
                 }
 
+                .player-controls-icons .fa-play:hover{
+                    transform: scale(120%);
+                }
+
             .player-timing{
                 width: 100%;
                 align-items: center;
@@ -327,6 +372,7 @@ h1,h2,h3,h4,h5,h6{
                     height: 4px;
                     border-radius: 4px;
                     background-color: #5a5a5a;
+                    cursor: pointer;
                 }
 
                     .song-percentage{
@@ -334,7 +380,27 @@ h1,h2,h3,h4,h5,h6{
                         height: 100%;
                         border-radius: 4px;
                         background-color: #c1c1c1;
+                        position: relative;
                     }
+
+                        .bar-hover{
+                            position: absolute;
+                            right: -3px;
+                            top: -3px;
+                            width: 10px;
+                            height: 10px;
+                            background-color: white;
+                            border-radius: 50%;
+                            display: none;
+                        }
+
+                .player-bar:hover .song-percentage{
+                    background-color: #adff2f;
+                }
+
+                .player-bar:hover .bar-hover{
+                    display: block;
+                }
 
         .player-options{
             color: white;
@@ -355,6 +421,7 @@ h1,h2,h3,h4,h5,h6{
                 height: 4px;
                 border-radius: 4px;
                 background-color: #5a5a5a;
+                cursor: pointer;
             }
 
                 .volume-percentage{
@@ -362,7 +429,16 @@ h1,h2,h3,h4,h5,h6{
                     height: 4px;
                     border-radius: 4px;
                     background-color: #c1c1c1;
+                    position: relative;
                 }
+
+            .volume-bar:hover .volume-percentage{
+                background-color: #adff2f;
+            }
+
+            .volume-bar:hover .bar-hover{
+                display: block;
+            }
 
 /* Media Queries */
 
