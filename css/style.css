@@ -76,7 +76,7 @@ img{
 
     .logo-open-page{
         position: absolute;
-        width: 30vw;
+        width: 0px;
         top: -50%;
         z-index: 10;
         animation: logo-open-page 1s linear;
@@ -89,6 +89,7 @@ img{
 
     @keyframes logo-open-page {
         0% {
+            width: 30vw;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%) scale(100%);
@@ -96,6 +97,7 @@ img{
         }
 
         80% {
+            width: 30vw;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%) scale(120%);
@@ -103,6 +105,7 @@ img{
         }
 
         99%{
+            width: 30vw;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%) scale(300%);
@@ -110,6 +113,7 @@ img{
         }
 
         100%{
+            width: 0px;
             top: -50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(100%);
