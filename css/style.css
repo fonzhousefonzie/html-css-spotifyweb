@@ -27,6 +27,10 @@ h1,h2,h3,h4,h5,h6{
     color: white;
 }
 
+img{
+    display: block;
+}
+
 .flex{
     display: flex;
 }
@@ -216,6 +220,7 @@ h1,h2,h3,h4,h5,h6{
             .main-section{
                 overflow: auto;
                 background-color: #141922;
+                padding-top: 2rem;
             }
 
                 .menu{
