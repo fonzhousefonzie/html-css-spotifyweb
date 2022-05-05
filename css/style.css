@@ -74,53 +74,6 @@ img{
     overflow: hidden;
 }
 
-    .logo-open-page{
-        position: absolute;
-        width: 0px;
-        top: -50%;
-        z-index: 10;
-        animation: logo-open-page 1s linear;
-    }
-
-        .logo-open-page img{
-            width: 100%;
-            filter: drop-shadow(0 10px 10px black);
-        }
-
-    @keyframes logo-open-page {
-        0% {
-            width: 30vw;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(100%);
-            filter: opacity(1);
-        }
-
-        80% {
-            width: 30vw;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(120%);
-            filter: opacity(1);
-        }
-
-        99%{
-            width: 30vw;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(300%);
-            filter: opacity(0);
-        }
-
-        100%{
-            width: 0px;
-            top: -50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(100%);
-            filter: opacity(0);
-        }
-    }
-
     .main{
         overflow: hidden;
     }
@@ -311,7 +264,6 @@ img{
                     .component .cards-container{
                         gap: 1rem;
                         width: 100%;
-                        overflow: auto;
                     }
 
                         .cards-container .card{
@@ -319,7 +271,6 @@ img{
                             width: calc(100% / 6);
                             cursor: pointer;
                             text-align: center;
-                            min-width: 120px;
                         }
 
                             .card.rounded .img-container{
@@ -499,6 +450,10 @@ img{
 /* Media Queries */
 
 @media screen and (max-width: 1100px) {
+
+    .cards-container{
+        flex-wrap: wrap;
+    }
     
     .cards-container .card{
         min-width: calc((100% / 4) - 1rem);
@@ -507,10 +462,6 @@ img{
 }
 
 @media screen and (max-width: 700px) {
-
-    .logo-open-page{
-        width: 50vw;
-    }
 
     .cards-container .card{
         min-width: calc((100% / 2) - 1rem);
@@ -559,35 +510,5 @@ img{
 
     .nav li span{
         margin: auto;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .song-name{
-        display: none;
-    }
-
-    .player-options{
-        flex-basis: unset;
-    }
-
-    .volume-bar{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .song-icons{
-        display: none;
-    }
-
-    .player-options-controls .fa-list-ul, .player-options-controls .fa-display {
-        display: none;
-    }
-}
-
-@media screen and (max-height: 300px) {
-    .upgrade-bar{
-        display: none;
     }
 }
