@@ -19,6 +19,25 @@
         filter: drop-shadow(0 10px 10px black);
     }
 
+    
+            /* scrollbar */
+            
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+          }
+          
+          /* Track */
+          ::-webkit-scrollbar-track {
+            background: var(--black);
+          }
+          
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: grey;
+            border-radius: 1rem;
+          }
+        
 @keyframes logo-open-page {
     0% {
         width: 30vw;
